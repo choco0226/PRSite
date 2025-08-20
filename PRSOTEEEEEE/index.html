@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-page="top">Top</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="unity">Unity</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="blender">Blender</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TOP ページ -->
+        <div class="page active" id="top">
+            <h1>Welcome to My Portfolio</h1>
+
+            <!-- メイン画像・文章エリア -->
+            <div class="main-content">
+
+                <div class="main-text">
+                    <p>このサイトは、私が今まで制作してきた作品や参加したプロジェクトなどをまとめた成果物サイトです。</p>
+                    <p>UnityやBlenderを使用したゲーム開発や3Dアートの作品を中心に、その他の技術や経験も紹介しています。</p>
+                    <p>各ページでは、具体的にどのような活動を過去に行なっていたかを見ることができます。</p>
+                </div>
+            </div>
+
+            <!-- ナビゲーショングリッド -->
+            <div class="work-grid">
+                <div class="work-item clickable" data-page="profile">
+                    <div class="work-image">PROFILE</div>
+                </div>
+                <div class="work-item clickable" data-page="profile">
+                    <div class="work-description">
+                        <h3>Profile</h3>
+                        <p>私のプロフィール、経歴についてです。</p>
+                    </div>
+                </div>
+                <div class="work-item clickable" data-page="unity">
+                    <div class="work-description">
+                        <h3>Unity</h3>
+                        <p>高校時代に力を入れた
+                            チームでのゲーム開発をはじめとする
+                            様々なUnityプロジェクトについて説明します。</p>
+                    </div>
+                </div>
+                <div class="work-item clickable" data-page="unity">
+                    <div class="work-image">
+                        <img src="images/unitylogo.png" alt="Unity Logo" class="unity-logo">
+                    </div>
+                </div>
+                <div class="work-item clickable" data-page="blender">
+                    <div class="work-image">
+                        <img src="images/blender_logo.png" alt="Blender Logo" class="blender-logo">
+                    </div>
+                </div>
+                <div class="work-item clickable" data-page="blender">
+                    <div class="work-description">
+                        <h3>Blender</h3>
+                        <p>3Dゲームの作成などを通じて身につけた、リアルな街並みの再現やアニメーションについて説明します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFILE ページ -->
+        <div class="page" id="profile">
+            <h1>Profile</h1>
+
+            <!-- メイン画像・文章エリア -->
+            <div class="main-content">
+                <div class="main-image">
+                    <!-- 画像の例 -->
+                    <img src="images/profile-main.jpg" alt="プロフィール画像" class="media-item clickable-media"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="placeholder-image" style="display: none;">プロフィール画像</div>
+                </div>
+                <div class="main-text">
+                    <p>ゲーム開発と3Dアートに情熱を注ぐクリエイターです。技術と芸術の融合を追求し、ユーザーに感動を与える作品作りを心がけています。</p>
+                    <p>常に新しい技術に挑戦し、クリエイティブな表現の可能性を探求しています。</p>
+                </div>
+            </div>
+
+            <!-- スキルグリッド -->
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="images/nshigh-logo.png" alt="経験" class="nshigh-logo"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>経歴</h3>
+                        <p>2008年2月26日生まれ</p>
+                        <p>地元伊丹市の小中学校を卒業後、現在は学校法人角川ドワンゴ学園S高等学校に在籍しております。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>Github</h3>
+                        <p>過去の作品のリポジトリがある自身のGithubページです。</p>
+                        <p>※画像をクリックするとGithubへ遷移します。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <a href="https://github.com/choco0226">
+                            <img src="images/github-mark.png" alt="Github Logo" class="github-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <a href="https://gist.github.com/choco0226">
+                            <img src="images/githubgist-logo.png" alt="GithubGist Logo" class="gist-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>Github Gist</h3>
+                        <p>また、プロジェクトだけではなく、日頃の問題を改善するちょっとしたコードやテストコードの置き場として使用しているGithub Gistページです。</p>
+                        <p>※画像をクリックするとGithub Gistへ遷移します。</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- UNITY ページ -->
+            <div class="page" id="unity">
+                <h1>Unity Projects</h1>
+
+                <!-- メイン画像・文章エリア -->
+                <div class="main-content">
+                    <div class="main-image">
+                        <div class="placeholder-image" style="display: none;">Unity メイン画像</div>
+                        <img src="images/unitylogo.png" alt="Unityメイン画像" class="unity-logo">
+                    </div>
+                    <div class="main-text">
+                        <p>Unityを使用したゲーム開発プロジェクトをご紹介します。2Dから3Dまで、様々なジャンルのゲームを制作しています。</p>
+                        <p>インタラクティブな体験とユーザーエンゲージメントを重視した開発を行っています。</p>
+                    </div>
+                </div>
+
+                <!-- プロジェクトグリッド -->
+                <div class="work-grid">
+                    <div class="work-item">
+                        <video class="work-image media-item clickable-media" poster="images/animation-thumbnail.jpg"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <source src="videos/character-animation.mp4" type="video/mp4">
+                            <source src="videos/character-animation.webm" type="video/webm">
+                        </video>
+                        <div class="work-image">アニメーション</div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>2D Games</h3>
+                        <p>中学生活にて、Unityの教材を通してUnityやゲーム制作の基礎を学ぶ2Dゲームの制作を行なっておりました。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>3D Games</h3>
+                        <p>高校生活にて、友人と3DアクションRPGの制作を行なっておりました。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">3Dゲーム</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLENDER ページ -->
+        <div class="page" id="blender">
+            <h1>Blender Works</h1>
+
+            <!-- メイン画像・文章エリア -->
+            <div class="main-content">
+                <div class="main-image">
+                    <video class="media-item clickable-media" poster="images/blender-thumbnail.jpg"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <source src="videos/blender-animation.mp4" type="video/mp4">
+                        <source src="videos/blender-animation.webm" type="video/webm">
+                    </video>
+                    <div class="placeholder-image" style="display: none;">Blender メイン画像</div>
+                </div>
+                <div class="main-text">
+                    <p>Blenderを使用した3Dモデリング、アニメーション、レンダリング作品をご紹介します。キャラクターから環境まで幅広く制作しています。</p>
+                    <p>リアルな表現と芸術的な美しさを両立させた作品を心がけています。</p>
+                </div>
+            </div>
+
+            <!-- 作品グリッド -->
+            <div class="work-grid">
+                <div class="work-item">
+                    <img src="images/3d-models.jpg" alt="3Dモデル" class="work-image media-item clickable-media"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="work-image">3Dモデル</div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>3D Modeling</h3>
+                        <p>キャラクター、オブジェクト制作において、細部へのこだわりを持って制作。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>Animation</h3>
+                        <p>自然で滑らかなキャラクターアニメーションを実現しています。</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <video class="work-image media-item clickable-media" poster="images/animation-thumbnail.jpg"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <source src="videos/character-animation.mp4" type="video/mp4">
+                        <source src="videos/character-animation.webm" type="video/webm">
+                    </video>
+                    <div class="work-image">アニメーション</div>
+                </div>
+                <div class="work-item">
+                    <img src="images/rendering.jpg" alt="レンダリング" class="work-image media-item clickable-media"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="work-image">レンダリング</div>
+                </div>
+                <div class="work-item">
+                    <div class="work-description">
+                        <h3>Rendering</h3>
+                        <p>フォトリアルな画像制作で、現実と見分けのつかない品質を追求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- モーダル -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-media" alt="">
+            <video id="modal-video" class="modal-media" controls>
+                <source id="modal-video-source" src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
