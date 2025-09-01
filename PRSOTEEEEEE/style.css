@@ -189,22 +189,25 @@ main {
 }
 
 .clickable-media {
-    cursor: pointer;
-        width: 100%;
+    width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.2rem;
-    min-height: 250px;
-    border: 2px dashed rgba(255, 255, 255, 0.2);
+    font-size: 1.1rem;
+    min-height: 300px;
 }
 
 .clickable-media:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .main-image .media-item {
@@ -227,7 +230,7 @@ main {
     min-height: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    height: auto;
+    height: 334px;
 }
 
 .work-item:hover {
@@ -264,9 +267,16 @@ main {
 }
 
 .work-item .media-item {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
     min-height: 250px;
-    border: none;
-    border-radius: 0;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
 }
 
 .work-description {
@@ -385,8 +395,8 @@ video::-webkit-media-controls-panel {
     opacity: 1;
 }
 .unity-logo {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
     align-items: center;
     object-position: center;
@@ -411,7 +421,7 @@ video::-webkit-media-controls-panel {
     align-items: center;
     object-position: center;
 }
-.nshigh-logo{
+.nshigh-logo {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
